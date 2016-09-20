@@ -104,6 +104,7 @@ public class DOFavoriteButton: UIButton {
     }
 
     private func createLayers(image image: UIImage!) {
+        self.layoutIfNeeded()
         self.layer.sublayers = nil
 
         let imageFrame = CGRectMake(frame.size.width / 2 - frame.size.width / 4, frame.size.height / 2 - frame.size.height / 4, frame.size.width / 2, frame.size.height / 2)
